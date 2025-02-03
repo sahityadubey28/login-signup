@@ -42,15 +42,6 @@ export default {
         "3d": "8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.5)",
         "3d-hover": "12px 12px 20px rgba(0, 0, 0, 0.15), -12px -12px 20px rgba(255, 255, 255, 0.6), inset 2px 2px 5px rgba(255, 255, 255, 0.2)",
       },
-      animation: {
-        "float": "float 6s ease-in-out infinite",
-      },
-      keyframes: {
-        float: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" },
-        },
-      },
     },
   },
   plugins: [require("tailwindcss-animate")],

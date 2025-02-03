@@ -17,7 +17,7 @@ const AuthCard = () => {
   };
 
   return (
-    <div className="relative w-full max-w-md p-8 bg-white/20 backdrop-blur-lg rounded-3xl shadow-3d transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-3d-hover animate-float">
+    <div className="relative w-full max-w-md p-8 bg-white/20 backdrop-blur-lg rounded-3xl shadow-3d transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-3d-hover">
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold text-primary mb-2">Height Detection App</h1>
         <p className="text-neutral-dark text-lg">Authenticate with your voice</p>
