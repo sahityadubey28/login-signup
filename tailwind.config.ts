@@ -25,13 +25,13 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#8B4513",
-          hover: "#6B3410",
-          light: "#A65D2E",
+          DEFAULT: "#E85D04",
+          hover: "#DC2F02",
+          light: "#F48C06",
         },
         peach: {
-          light: "#FDE1D3",
-          DEFAULT: "#FEC6A1",
+          light: "#FFEDD8",
+          DEFAULT: "#FFD8B4",
         },
         neutral: {
           DEFAULT: "#8E9196",
