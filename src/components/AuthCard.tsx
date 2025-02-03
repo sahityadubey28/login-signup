@@ -17,7 +17,7 @@ const AuthCard = () => {
   };
 
   return (
-    <div className="relative w-full max-w-md p-8 bg-white/20 backdrop-blur-lg rounded-3xl shadow-3d transition-all duration-500 hover:shadow-3d-hover animate-float">
+    <div className="relative w-full max-w-md p-8 bg-white/20 backdrop-blur-lg rounded-3xl shadow-3d transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-3d-hover animate-float">
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold text-primary mb-2">Height Detection App</h1>
         <p className="text-neutral-dark text-lg">Authenticate with your voice</p>
@@ -26,9 +26,9 @@ const AuthCard = () => {
       <div className="flex justify-center gap-4 mb-12">
         <button
           onClick={() => setIsLogin(true)}
-          className={`px-6 py-2 rounded-lg transition-all duration-300 ${
+          className={`px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 ${
             isLogin
-              ? "bg-primary text-white shadow-lg"
+              ? "bg-primary text-white shadow-lg hover:bg-primary-hover"
               : "text-neutral-dark hover:bg-primary/10"
           }`}
         >
@@ -36,9 +36,9 @@ const AuthCard = () => {
         </button>
         <button
           onClick={() => setIsLogin(false)}
-          className={`px-6 py-2 rounded-lg transition-all duration-300 ${
+          className={`px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 ${
             !isLogin
-              ? "bg-primary text-white shadow-lg"
+              ? "bg-primary text-white shadow-lg hover:bg-primary-hover"
               : "text-neutral-dark hover:bg-primary/10"
           }`}
         >
@@ -49,7 +49,7 @@ const AuthCard = () => {
       <div className="flex flex-col items-center">
         <button
           onClick={handleVoiceAuth}
-          className={`w-24 h-24 rounded-full flex items-center justify-center transition-all duration-500 ${
+          className={`w-24 h-24 rounded-full flex items-center justify-center transition-all duration-500 transform hover:scale-110 ${
             isListening
               ? "bg-primary/20 scale-110"
               : "bg-primary hover:bg-primary-hover"
